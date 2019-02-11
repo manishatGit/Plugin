@@ -8,7 +8,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 @Mojo(name = "test", threadSafe = true)
 public class Hello extends AbstractMojo {
 
-    @Parameter(name = "test.message", required = true)
+    @Parameter(property = "test.message", required = true)
     public String message;
 
     public void execute() throws MojoExecutionException {

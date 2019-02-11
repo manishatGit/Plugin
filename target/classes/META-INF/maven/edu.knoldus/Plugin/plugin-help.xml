@@ -25,13 +25,16 @@
       <threadSafe>true</threadSafe>
       <parameters>
         <parameter>
-          <name>test.message</name>
+          <name>message</name>
           <type>java.lang.String</type>
           <required>true</required>
           <editable>true</editable>
           <description></description>
         </parameter>
       </parameters>
+      <configuration>
+        <message implementation="java.lang.String">${test.message}</message>
+      </configuration>
     </mojo>
   </mojos>
 </plugin>
